@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Sorting visualizer</title>
+</head>
+<body> 
+    <h1 class="title">Sorting Algorithms Visualizer</h1>
+    <div class="navbar" id="navbar">
+        <a id="random" onclick="RenderScreen()">Create</a>
+        <a id="random" onclick="clearScreen()">Clear</a>
+        <span class="options"> 
+            <select name="select Algorithm" id="menu" 
+                class="algo-menu">
+                <option value="0">Algorithm</option>
+                <option value="1">Bubble Sort</option>
+                <option value="2">Selection Sort</option>
+                <option value="3">Insertion Sort</option>
+                <option value="4">Merge Sort</option>
+                <option value="5">Quick Sort</option>
+            </select>
+        </span>
+        <span class="options">
+            <select name="select Array Length" id="menu" class="size-menu">
+                <option value="0">Array Length</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+                <option value="60">60</option>
+                <option value="70">70</option>
+                <option value="80">80</option>
+                <option value="90">90</option>
+                <option value="100">100</option>
+            </select>
+        </span>
+        <span class="options">
+        </span>
+        <a class="start">SORT</a>
+        <a class="icon"><i class="fa fa-bars"></i></a>
+    </div>
+    <br /><br />
+    <div class="center">
+        <div class="frame" id="box">
+            <div class="array"></div>
+        </div>
+        <div class="guide">
+            <h2>The sorting visualization will appear in the above box. Select the algorithms you want to<br>sort and 
+            select the size of the array then just click on the sort button.</h2>
+        </div>
+    </div>
+    <script src="./javascript/app.js"></script>
+    <script src="./javascript/methods.js"></script>
+    <script src="./javascript/algorithms.js"></script>
+</body>
+</html>
